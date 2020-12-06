@@ -1,0 +1,35 @@
+<?php
+
+// Complete the solve function below.
+function solve($meal_cost, $tip_percent, $tax_percent) {
+
+
+}
+
+$stdin = fopen("php://stdin", "r");
+
+fscanf($stdin, "%lf\n", $meal_cost);
+
+fscanf($stdin, "%d\n", $tip_percent);
+
+fscanf($stdin, "%d\n", $tax_percent);
+$tip=$meal_cost/100*$tip_percent;
+$tax=$tax_percent/100*$meal_cost;
+solve($meal_cost, $tip_percent, $tax_percent);
+$total=$meal_cost+ $tip+ $tax;
+echo round($total);
+fclose($stdin);
+
+
+input (stdin)
+
+Download
+12.00
+20
+8
+Your Output (stdout)
+15
+Expected Output
+
+Download
+15
