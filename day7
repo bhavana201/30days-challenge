@@ -1,0 +1,24 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+
+
+if __name__ == '__main__':
+    n = int(input())
+
+    arr = list(map(int, input().rstrip().split()))
+    arr.reverse()
+    print(*arr)
+    
+    ex=
+    3
+5833 9919 6731
+Expected Output
+
+Download
+6731 9919 5833
