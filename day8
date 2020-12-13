@@ -1,0 +1,38 @@
+phonebook = {}
+entries = int(raw_input())
+
+for n in range(entries):
+    name, num = raw_input().strip().split(' ')
+    name, num = [str(name), int(num)]
+    phonebook[name] = num
+
+while True:
+    try:  
+        search = str(raw_input())
+
+        if search in phonebook.keys():
+            output = ''.join('%s=%r' % (search, phonebook[search]))
+            print output
+        else:
+            print "Not found"
+    except EOFError:
+        break
+
+
+
+output:
+
+Download
+3
+sam 99912222
+tom 11122222
+harry 12299933
+sam
+edward
+harry
+Expected Output
+
+Download
+sam=99912222
+Not found
+harry=12299933
